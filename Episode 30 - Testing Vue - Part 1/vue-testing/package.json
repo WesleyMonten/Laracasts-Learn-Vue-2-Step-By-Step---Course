@@ -1,0 +1,27 @@
+{
+  "name": "vue-testing",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "ava"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "vue": "^2.6.11"
+  },
+  "devDependencies": {
+    "ava": "^3.2.0",
+    "browser-env": "^3.3.0",
+    "esm": "^3.2.25"
+  },
+  "ava": {
+    "failWithoutAssertions": false,
+    "require": [
+      "esm",
+      "./test/helpers/setup-browser-env.js"
+    ]
+  }
+}
